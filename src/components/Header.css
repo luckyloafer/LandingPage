@@ -1,0 +1,44 @@
+.headContainer{
+    width: auto;
+    display: flex;
+flex-direction: column;
+align-items: center;
+border-bottom: 1px solid var(--Neutral-1000, #E6E7E9);
+background: var(--White, #FFF);
+}
+.headContent{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 16px;
+}
+.badge{
+    display: flex;
+padding: 4px 8px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 240px;
+border: 1px solid var(--Neutral-1000, #E6E7E9);
+background: var(--Neutral-1300, #F1F1F2);
+color: var(--Neutral-200, #363C46);
+text-align: center;
+
+/* H05/12/Medium */
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px; /* 133.333% */
+}
+.badgesidetext{
+    color: var(--Neutral-50, #121417);
+text-align: center;
+
+/* H25/14/Medium */
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+}

@@ -1,0 +1,188 @@
+.navbar{
+    width: auto;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--Neutral-1000, #E6E7E9);
+background: var(--White, #FFF);
+}
+.navbar-container{
+    display: flex;
+    padding: 0px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.navbar-container-row{
+    display: flex;
+    width: 1216px;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-container-row-logo{
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+.navbar-container-row-logo-logobox{
+    display: flex;
+    padding: 4px 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.navbar-container-row-menu{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+.navbar-container-row-menu-link{
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.navbar-container-row-menu-link-mainMenulink{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.navbar-container-row-menu-link-mainMenulink-linktext{
+    color: var(--Neutral-200, #363C46);
+    text-align: center;
+    
+    /* H50/16/Medium */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+}
+.navbar-container-row-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+}
+.navbar-container-row-action-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-container-row-action-buttons-baseButton{
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: none;
+background: var(--Neutral-1200, #EEEFEF);
+}
+.navbar-container-row-action-buttons-baseButton-buttonText{
+    color: var(--Neutral-400, #5A6475);
+text-align: center;
+
+/* H50/16/Medium */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 125% */
+}
+.navbar-container-row-content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+}
+.navbar-container-row-content-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+}
+.navbar-container-row-content-action-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-container-row-content-action-buttons-basebuttons{
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+background: var(--Neutral-1200, #EEEFEF);
+}
+.navbar-container-row-content-action-buttons-basebuttons-text{
+    color: var(--Neutral-400, #5A6475);
+    text-align: center;
+    
+    /* H50/16/Medium */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+}
+.navbar-container-row-content-menuButton{
+    display: flex;
+padding: 8px;
+justify-content: flex-end;
+align-items: flex-start;
+gap: 8px;
+}
+
+
+@media screen and (max-width: 1268px) {
+    .navbar-container-row {
+        width: 1077px;
+    }
+    .navbar-container{
+        padding: 0px;
+    }
+  }
+  @media screen and (max-width: 1087px) {
+    .navbar-container-row {
+        width: 992px;
+    }
+    
+  }
+  @media screen and (max-width: 1012px) {
+    .navbar-container-row {
+        width:639px;
+    }
+  }
+
+  @media screen and (max-width: 656px) {
+    .navbar-container-row {
+        width:577px;
+    }
+  }
+  @media screen and (max-width: 596px) {
+    .navbar-container-row {
+        width:514px;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    .navbar-container-row {
+        width: 343px;
+    }
+  }
+
+
+
+
