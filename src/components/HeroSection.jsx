@@ -1,6 +1,20 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './heroSection.css'
+import axios from 'axios';
 const HeroSection = () => {
+
+  const [buttonText,setButtonText] = useState("");
+
+  const settingButtonText = async()=>{
+    const res = await axios.get("https://assessmentbackend.onrender.com/admin/updateHeaderBtnText");
+    console.log(res.data.headerBtnText);
+    setButtonText(res.data.headerBtnText);
+  }
+  // settingButtonText();
+
+  useState(()=>{
+       settingButtonText();
+  },[])
   return (
     
       <div className='heroSectionMain-heroSection'>
@@ -20,7 +34,7 @@ const HeroSection = () => {
                 <div className='heroSectionMain-heroSection-container-row-content-content2-action'>
                   <div className='heroSectionMain-heroSection-container-row-content-content2-action-buttons'>
                     <button className='heroSectionMain-heroSection-container-row-content-content2-action-buttons-basebuttons'>
-                      <text className='heroSectionMain-heroSection-container-row-content-content2-action-buttons-basebuttons-baseButtontext'>Unlock your Card</text>
+                      <text className='heroSectionMain-heroSection-container-row-content-content2-action-buttons-basebuttons-baseButtontext'>{buttonText}</text>
                       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
                         <path d="M4.66666 9.99996H16.3333M16.3333 9.99996L10.5 4.16663M16.3333 9.99996L10.5 15.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
