@@ -138,6 +138,7 @@ align-items: center;
     align-items: center;
     gap: 8px;
     border-radius: 8px;
+    border:none;
 background: var(--Pri-Purple-400, #582066);
 }
 .heroSectionMain-heroSection-container-row-content-content2-action-buttons-basebuttons-baseButtontext{
