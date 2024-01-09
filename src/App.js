@@ -16,7 +16,7 @@ function App() {
         <Testimonial/>
         <CalltoAction/>
         <Footer/> 
-         <Email/>
+         {/* <Email/> */}
    </div>
 
    

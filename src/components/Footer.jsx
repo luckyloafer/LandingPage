@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import Email from './Email'
 const Footer = () => {
 
     // const styles={
@@ -110,6 +111,7 @@ const Footer = () => {
                                 </svg>
                             </div>
                         </div>
+                        <Email/>
                         <text className='footer-container-row-content2-text'>© 2023 Mode UI  Inc. All Rights Reserved.</text>
                     </div>
 
